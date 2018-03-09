@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HaoLou</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
+    <!-- Le styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loader-style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/minus.png">
+    <script type="text/javascript" src="ng/angular.min.js"></script>
+    <script type="text/javascript" src="ng/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="angular.haolou.js"></script>
+</head>
+
+<body ng-app="HaoLouApp">
+<!-- Preloader -->
+<div id="preloader" style="display: none;">
+    <div id="status">&nbsp;</div>
+</div>
+<!-- TOP NAVBAR -->
+<nav role="navigation" class="navbar navbar-static-top" style="margin-left: 240px;">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle"
+                    type="button">
+                <span class="entypo-menu"></span>
+            </button>
+            <button class="navbar-toggle toggle-menu-mobile toggle-left" type="button">
+                <span class="entypo-list-add"></span>
+            </button>
+            <div id="logo-mobile" class="visible-xs">
+                <h1>HAOLOU.<span>Org</span></h1>
+            </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <div id="nt-title-container" class="navbar-left running-text visible-lg">
+                <ul class="date-top">
+                    <li class="entypo-calendar" style="margin-right:5px"></li>
+                    <li id="Date"></li>
+                </ul>
+
+                <ul id="digital-clock" class="digital">
+                    <li class="entypo-clock" style="margin-right:5px"></li>
+                    <li class="hour"></li>
+                    <li>:</li>
+                    <li class="min"></li>
+                    <li>:</li>
+                    <li class="sec"></li>
+                    <li class="meridiem"></li>
+                </ul>
+                <ul id="nt-title">
+                    <li><i class="wi-day-lightning"></i>&#160;&#160;北京&#160;
+                        <b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
+                    </li>
+                    <li><i class="wi-day-lightning"></i>&#160;&#160;上海&#160;
+                        <b>85</b><i class="wi-fahrenheit"></i>&#160;; Tonight- 72 °F (22.2 °C)
+                    </li>
+
+                    <li><i class="wi-day-lightning"></i>&#160;&#160;柏林&#160;
+                        <b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
+                    </li>
+
+                    <li><i class="wi-day-lightning"></i>&#160;&#160;伦敦&#160;
+                        <b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
+                    </li>
+
+                    <li><i class="wi-day-lightning"></i>&#160;&#160;纽约&#160;
+                        <b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
+                    </li>
+
+                </ul>
+            </div>
+
+            <ul style="margin-right:0;" class="nav navbar-nav navbar-right">
+                <li>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <img alt="" class="admin-pic img-circle"
+                             src="http://api.randomuser.me/portraits/thumb/men/10.jpg">Hi,邓东<b class="caret"></b>
+                    </a>
+                    <ul style="margin-top:14px;" role="menu" class="dropdown-setting dropdown-menu">
+                        <li>
+                            <a ui-sref="personalData"><span class="entypo-user"></span>&#160;&#160;个人资料</a>
+                        </li>
+                        <li>
+                            <a ui-sref="personalDataSet">
+                                <span class="entypo-vcard"></span>&#160;&#160;帐户设置</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a ui-sref="help">
+                                <span class="entypo-lifebuoy"></span>&#160;&#160;帮助</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="icon-gear"></span>&#160;&#160;设置</a>
+                    <ul role="menu" class="dropdown-setting dropdown-menu">
+
+                        <li class="theme-bg">
+                            <div id="button-bg"></div>
+                            <div id="button-bg2"></div>
+                            <div id="button-bg3"></div>
+                            <div id="button-bg5"></div>
+                            <div id="button-bg6"></div>
+                            <div id="button-bg7"></div>
+                            <div id="button-bg8"></div>
+                            <div id="button-bg9"></div>
+                            <div id="button-bg10"></div>
+                            <div id="button-bg11"></div>
+                            <div id="button-bg12"></div>
+                            <div id="button-bg13"></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-document"></i>
+                        <span>退出</span>
+                    </a>
+                </li>
+                <li class="hidden-xs">
+                    <a class="toggle-left" href="#">
+                        <span style="font-size:20px;" class="entypo-list-add"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<!-- /END OF TOP NAVBAR -->
+<!-- SIDE MENU -->
+<div id="skin-select">
+    <div id="logo">
+        <h1>HAOLOU.<span>Org</span></h1>
+    </div>
+    <a id="toggle">
+        <span class="entypo-menu"></span>
+    </a>
+
+    <div class="dark">
+        <form action="#">
+					<span>
+                    <input type="text" name="search" value="" class="search rounded id_search"
+                           placeholder="Search Menu..." autofocus="">
+                </span>
+        </form>
+    </div>
+    <div class="skin-part">
+        <div id="tree-wrap">
+            <div class="side-bar">
+                <ul class="topnav menu-left-nest">
+                    <li>
+                        <a href="#" style="border-left:0px solid!important;" class="title-menu-left">
+
+                            <span class="widget-menu"></span>
+                            <i data-toggle="tooltip" class="entypo-cog pull-right config-wrap"></i>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="tooltip-tip ajax-load" href="#" title="房源">
+                            <i class="icon icon-home"></i>
+                            <span>房源</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load"
+                                   ui-sref="Housing-list" title="房源列表">
+                                    <i class="icon icon-document"></i><span>房源列表</span></a>
+                            </li>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load"
+                                   ui-sref="Housing-add" title="房源编辑">
+                                    <i class="icon icon-plus"></i><span>房源编辑</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="tooltip-tip ajax-load" href="#" title="楼盘">
+                            <i class="icon icon-map"></i>
+                            <span>楼盘</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load" ui-sref="Property-list" title="楼盘列表"><i
+                                        class="icon icon-document"></i><span>楼盘列表</span></a>
+                            </li>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load" ui-sref="Property-add" title="楼盘编辑"><i
+                                        class="icon icon-document-new"></i><span>楼盘编辑</span></a>
+                            </li>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load" ui-sref="Property-picture" title="楼盘图库"><i
+                                        class="icon icon-star"></i><span>楼盘图库</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="topnav menu-left-nest">
+                    <li>
+                        <a href="#" style="border-left:0px solid!important;" class="title-menu-left">
+                            <span class="design-kit"></span>
+                            <i data-toggle="tooltip" class="entypo-cog pull-right config-wrap"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltip-tip" href="#" title="经纪公司">
+                            <i class="icon icon-view-list"></i>
+                            <span>经纪公司</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load" ui-sref="Company-list" title="经纪公司列表"><i
+                                        class="icon-feed"></i><span>经纪公司列表</span></a>
+                            </li>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load" ui-sref="Company-add" title="添加经纪公司"><i
+                                        class="icon-media-record"></i><span>编辑经纪公司</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="tooltip-tip" href="#" title="经纪人">
+                            <i class="icon icon-user-group"></i>
+                            <span>经纪人</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load" ui-sref="Brokers-list" title="经纪人列表"><i
+                                        class="icon-user"></i><span>经纪人列表</span></a>
+                            </li>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load" ui-sref="Brokers-add" title="添加经纪人"><i
+                                        class="icon-media-record"></i><span>编辑经纪人</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="tooltip-tip" href="#" title="广告">
+                            <i class="entypo-picture"></i>
+                            <span>广告</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load" ui-sref="advertisement-list" title="经纪人列表"><i
+                                        class="icon icon-document"></i><span>广告列表</span></a>
+                            </li>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load" ui-sref="advertisement-Set" title="添加经纪人"><i
+                                        class="icon icon icon-plus"></i><span>编辑广告</span></a>
+                            </li>
+                            <li>
+                                <a class="tooltip-tip2 ajax-load" ui-sref="advertisement-picture" title="添加经纪人"><i
+                                        class="icon-star"></i><span>广告图库</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="menu-showhide" class="topnav menu-left-nest">
+                    <li>
+                        <a href="#" style="border-left:0 solid!important;" class="title-menu-left">
+                            <span class="component"></span>
+                            <i data-toggle="tooltip" class="entypo-cog pull-right config-wrap"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltip-tip" ui-sref="admin" title="管理员">
+                            <i class="icon icon-user"></i>
+                            <span>管理员列表</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltip-tip" ui-sref="invoice" title="打印">
+                            <i class="icon icon-print"></i>
+                            <span>打印</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tooltip-tip" href="login.html" title="登录">
+                            <i class="icon-document"></i>
+                            <span>登录</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a class="tooltip-tip" href="lock-screen.html" title="锁定">
+                            <i class="icon-view-thumb"></i>
+                            <span>锁定</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END OF SIDE MENU -->
+<!--  PAPER WRAP -->
+<div class="wrap-fluid" style="width: auto; margin-left: 250px;">
+    <div class="container-fluid paper-wrap bevel tlbr">
+        <!-- CONTENT -->
+        <!--TITLE -->
+        <div class="row">
+            <div id="paper-top">
+                <div class="col-sm-3">
+                    <h2 class="tittle-content-header">
+                        <i class="icon icon-attachment"></i>
+                        <span>管理页面</span>
+                    </h2>
+                </div>
+
+                <div class="col-sm-7">
+                    <div class="devider-vertical visible-lg"></div>
+                    <div class="tittle-middle-header">
+
+                        <div class="alert">
+                            <button type="button" class="close" data-dismiss="alert">×</button>
+                            <span class="tittle-alert entypo-info-circled"></span> Welcome back,&nbsp;
+                            <strong>邓东</strong>&nbsp;&nbsp;你上次登录是在昨天, 16:54 PM
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-2">
+                    <div class="devider-vertical visible-lg"></div>
+                </div>
+            </div>
+        </div>
+        <!--/ TITLE -->
+
+
+        <div ui-view>
+            <!--这里面是ng 的视图切换区域-->
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer-space"></div>
+        <div id="footer">
+            <div class="devider-footer-left"></div>
+            <div class="time">
+                <p id="spanDate"></p>
+
+                <p id="clock"></p>
+            </div>
+            <div class="copyright">Make with Love
+                <span class="entypo-heart"></span>2015 <a href="#">HaoLou</a> All Rights Reserved
+            </div>
+            <div class="devider-footer"></div>
+        </div>
+        <!-- / END OF FOOTER -->
+    </div>
+</div>
+<!--  END OF PAPER WRAP -->
+<!-- RIGHT SLIDER CONTENT -->
+<div class="sb-slidebar sb-right">
+    <div class="right-wrapper">
+        <div class="row">
+            <h3>
+                <span><i class="entypo-chat"></i>&nbsp;&nbsp;CHAT</span>
+            </h3>
+
+            <div class="col-sm-12">
+                <span class="label label-warning label-chat">Online</span>
+                <ul class="chat">
+                    <li>
+                        <a href="#">
+									<span>
+                                    <img alt="" class="img-chat img-circle"
+                                         src="http://api.randomuser.me/portraits/thumb/men/20.jpg">
+                                </span><b>张三</b>
+                            <br><i>Last seen : 08:00 PM</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+									<span>
+                                    <img alt="" class="img-chat img-circle"
+                                         src="http://api.randomuser.me/portraits/thumb/men/21.jpg">
+                                </span><b>李四</b>
+                            <br><i>Last seen : 07:21 PM</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+									<span>
+                                    <img alt="" class="img-chat img-circle"
+                                         src="http://api.randomuser.me/portraits/thumb/men/22.jpg">
+                                    </span>
+                            <b>小二</b>
+                            <br><i>Last seen : 05:43 PM</i>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <span class="label label-chat">Offline</span>
+                <ul class="chat">
+                    <li>
+                        <a href="#">
+									<span>
+                                    <img alt="" class="img-chat img-offline img-circle"
+                                         src="http://api.randomuser.me/portraits/thumb/men/23.jpg">
+                                </span><b>艾希</b>
+                            <br><i>Last seen : 08:00 PM</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+									<span>
+                                    <img alt="" class="img-chat img-offline img-circle"
+                                         src="http://api.randomuser.me/portraits/thumb/women/24.jpg">
+                                </span><b>小炮</b>
+                            <br><i>Last seen : 07:21 PM</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+									<span>
+                                    <img alt="" class="img-chat img-offline img-circle"
+                                         src="http://api.randomuser.me/portraits/thumb/men/25.jpg">
+                                </span><b>蛮子</b>
+                            <br><i>Last seen : 05:43 PM</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+									<span>
+                                    <img alt="" class="img-chat img-offline img-circle"
+                                         src="http://api.randomuser.me/portraits/thumb/women/25.jpg">
+                                </span><b>逗逼</b>
+                            <br><i>Last seen : 07:21 PM</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+									<span>
+                                    <img alt="" class="img-chat img-offline img-circle"
+                                         src="http://api.randomuser.me/portraits/thumb/men/26.jpg">
+                                </span><b>卡尔</b>
+                            <br><i>Last seen : 05:43 PM</i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END OF RIGHT SLIDER CONTENT-->
+<!-- MAIN EFFECT -->
+<script type="text/javascript" src="assets/js/preloader.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/js/load.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<!-- /MAIN EFFECT -->
+
+</body>
+</html>

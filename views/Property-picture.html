@@ -1,0 +1,281 @@
+<link href="assets/js/iCheck/flat/all.css" rel="stylesheet">
+<link href="assets/js/iCheck/line/all.css" rel="stylesheet">
+<link href="assets/js/colorPicker/bootstrap-colorpicker.css" rel="stylesheet">
+<link href="assets/js/switch/bootstrap-switch.css" rel="stylesheet">
+<link href="assets/js/validate/validate.css" rel="stylesheet">
+<link href="assets/js/idealform/css/jquery.idealforms.css" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/js/upload/demos/css/uploader.css">
+<link rel="stylesheet" href="assets/js/upload/demos/css/demo.css">
+<link rel="stylesheet" href="assets/js/dropZone/downloads/css/dropzone.css">
+<link rel="stylesheet" href="assets/css/itattoo/haolou-main.css">
+<!-- BREADCRUMB -->
+<ul id="breadcrumb">
+    <li><span class="entypo-home"></span></li>
+    <li><i class="fa fa-lg fa-angle-right"></i></li>
+    <li><a href="#">楼盘</a></li>
+    <li><i class="fa fa-lg fa-angle-right"></i></li>
+    <li><a href="#">楼盘图库</a></li>
+    <li class="pull-right">
+        <div class="input-group input-widget">
+            <input style="border-radius:15px" type="text" placeholder="Search..." class="form-control">
+        </div>
+    </li>
+</ul>
+<!-- END OF BREADCRUMB -->
+<div class="content-wrap">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="nest" id="FootableClose1">
+				<div class="title-alt">
+					<h6>楼盘图库</h6>
+
+					<div class="titleClose">
+						<a class="gone" href="#FootableClose1">
+							<span class="entypo-cancel"></span>
+						</a>
+					</div>
+					<div class="titleToggle">
+						<a class="nav-toggle-alt" href="#Footable">
+							<span class="entypo-up-open"></span>
+						</a>
+					</div>
+				</div>
+				<div class="body-nest" id="Footable">
+					<form method="get" class="form-horizontal bucket-form">
+						<div class="form-group">
+							<label class="col-sm-1 control-label" style="text-align: left">分类</label>
+
+							<div class="col-lg-10">
+								<div class="skin skin-flat">
+									<ul class="list" style="height: 31px">
+										<li>
+											<input tabindex="19" type="radio" id="line-radio-b1" name="line-radio-b">
+											<label for="line-radio-b1">焦点图</label>
+										</li>
+										<li>
+											<input tabindex="20" type="radio" id="line-radio-b2" name="line-radio-b">
+											<label for="line-radio-b2">外景图</label>
+										</li>
+										<li>
+											<input tabindex="21" type="radio" id="line-radio-b3" name="line-radio-b" checked="">
+											<label for="line-radio-b3">内景图</label>
+										</li>
+										<li>
+											<input tabindex="22" type="radio" id="line-radio-b4" name="line-radio-b">
+											<label for="line-radio-b4">低区平面图</label>
+										</li>
+										<li>
+											<input tabindex="22" type="radio" id="line-radio-b5" name="line-radio-b">
+											<label for="line-radio-b5">中区平面图</label>
+										</li>
+										<li>
+											<input tabindex="22" type="radio" id="line-radio-b6" name="line-radio-b">
+											<label for="line-radio-b6">高区平面图</label>
+										</li>
+										<li>
+											<input tabindex="22" type="radio" id="line-radio-b7" name="line-radio-b">
+											<label for="line-radio-b7">效果图</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="row">
+						<div class="col-sm-1">
+							<!--<a href="#" class="pull-left btn btn-info clear-filter">上传</a>-->
+							<!--<a href="#" style="margin-left:10px;" class="pull-left btn btn-info filter-api">保存</a>-->
+							<div class="uploader">
+								<div class="browser">
+									<label>
+										<span>上传</span>
+										<input type="file" name="files[]" multiple="multiple" title="Click to add Files">
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-1">
+							<button class="btn btn-info" style="border-radius: 2px;width: 100%;height: 29px;" type="button">保存
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12" style="margin-top: 20px">
+							<ul class="img-update row">
+								<li class="col-sm-3">
+									<img class="img-responsive-media" src="http://lorempixel.com/output/food-q-c-600-300-9.jpg" alt="">
+
+									<div class="progress update-progress hidden">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											40%
+										</div>
+									</div>
+									<div class="update-progress">
+										<ul class="img-update row">
+											<li class="col-sm-3" style="padding: 10px"><a href="#"><span
+                                                            class="icon icon-arrow-left"></span></a></li>
+											<li class="col-sm-3"><a href="#"><span
+                                                            class="icon icon-download"></span></a></li>
+											<li class="col-sm-3"><a href="#"><span
+                                                            class="icon icon-trash"></span></a></li>
+											<li class="col-sm-3"><a href="#"><span
+                                                            class="icon icon-arrow-right"></span></a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="col-sm-3">
+									<img class="img-responsive-media" src="http://lorempixel.com/output/food-q-c-600-300-9.jpg" alt="">
+
+									<div class="progress update-progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											40%
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-3">
+									<img class="img-responsive-media" src="http://lorempixel.com/output/food-q-c-600-300-9.jpg" alt="">
+
+									<div class="progress update-progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											40%
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-3">
+									<img class="img-responsive-media" src="http://lorempixel.com/output/food-q-c-600-300-9.jpg" alt="">
+
+									<div class="progress update-progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											40%
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-3">
+									<img class="img-responsive-media" src="http://lorempixel.com/output/food-q-c-600-300-9.jpg" alt="">
+
+									<div class="progress update-progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											40%
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-3">
+									<img class="img-responsive-media" src="http://lorempixel.com/output/food-q-c-600-300-9.jpg" alt="">
+
+									<div class="progress update-progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											40%
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="assets/js/iCheck/jquery.icheck.js"></script>
+<script type="text/javascript" src="assets/js/switch/bootstrap-switch.js"></script>
+<!--  PLUGIN -->
+<script>
+	$(document).ready(function() {
+		//CHECKBOX PRETTYFY
+		$('.skin-flat input').iCheck({
+			checkboxClass: 'icheckbox_flat-red',
+			radioClass: 'iradio_flat-red'
+		});
+		$('.skin-line input').each(function() {
+			var self = $(this),
+				label = self.next(),
+				label_text = label.text();
+			label.remove();
+			self.iCheck({
+				checkboxClass: 'icheckbox_line-blue',
+				radioClass: 'iradio_line-blue',
+				insert: '<div class="icheck_line-icon"></div>' + label_text
+			});
+		});
+		//Switch Button
+		$('.make-switch').bootstrapSwitch('setSizeClass', 'switch-small');
+	});
+</script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="assets/js/upload/demos/js/demo.min.js"></script>
+<script type="text/javascript" src="assets/js/upload/src/dmuploader.min.js"></script>
+<script type="text/javascript" src="assets/js/dropZone/lib/dropzone.js"></script>
+
+<script type="text/javascript">
+	$('#drag-and-drop-zone').dmUploader({
+		url: '/assets/js/upload/demos/upload.php',
+		dataType: 'json',
+		allowedTypes: 'image/*',
+		/*extFilter: 'jpg;png;gif',*/
+		onInit: function() {
+			$.danidemo.addLog('#demo-debug', 'default', 'Plugin initialized correctly');
+		},
+		onBeforeUpload: function(id) {
+			$.danidemo.addLog('#demo-debug', 'default', 'Starting the upload of #' + id);
+			$.danidemo.updateFileStatus(id, 'default', 'Uploading...');
+		},
+		onNewFile: function(id, file) {
+			$.danidemo.addFile('#demo-files', id, file);
+		},
+		onComplete: function() {
+			$.danidemo.addLog('#demo-debug', 'default', 'All pending tranfers completed');
+		},
+		onUploadProgress: function(id, percent) {
+			var percentStr = percent + '%';
+			$.danidemo.updateFileProgress(id, percentStr);
+		},
+		onUploadSuccess: function(id, data) {
+			$.danidemo.addLog('#demo-debug', 'success', 'Upload of file #' + id + ' completed');
+			$.danidemo.addLog('#demo-debug', 'info', 'Server Response for file #' + id + ': ' + JSON.stringify(data));
+			$.danidemo.updateFileStatus(id, 'success', 'Upload Complete');
+			$.danidemo.updateFileProgress(id, '100%');
+		},
+		onUploadError: function(id, message) {
+			$.danidemo.updateFileStatus(id, 'error', message);
+			$.danidemo.addLog('#demo-debug', 'error', 'Failed to Upload file #' + id + ': ' + message);
+		},
+		onFileTypeError: function(file) {
+			$.danidemo.addLog('#demo-debug', 'error', 'File /'
+				' + file.name + ' / ' cannot be added: must be an image'
+			);
+		},
+		onFileSizeError: function(file) {
+			$.danidemo.addLog('#demo-debug', 'error', 'File /'
+				' + file.name + ' / ' cannot be added: size excess limit'
+			);
+		},
+		/*onFileExtError: function(file){
+		 $.danidemo.addLog('#demo-debug', 'error', 'File /'' + file.name + '/' has a Not Allowed Extension');
+		 },*/
+		onFallbackMode: function(message) {
+			$.danidemo.addLog('#demo-debug', 'info', 'Browser not supported(do something else here!): ' + message);
+		}
+	});
+</script>
+
+<script>
+	Dropzone.options.myDropzone = {
+		// Prevents Dropzone from uploading dropped files immediately
+		autoProcessQueue: false,
+		init: function() {
+			var submitButton = document.querySelector("#submit-all")
+			myDropzone = this; // closure
+			submitButton.addEventListener("click", function() {
+				myDropzone.processQueue(); // Tell Dropzone to process all queued files.
+			});
+			// You might want to show the submit button only when
+			// files are dropped here:
+			this.on("addedfile", function() {
+				// Show submit button here and/or inform user to click it.
+			});
+		}
+	};
+</script>

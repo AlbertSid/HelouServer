@@ -1,0 +1,595 @@
+<link href="assets/js/iCheck/flat/all.css" rel="stylesheet">
+<link href="assets/js/iCheck/line/all.css" rel="stylesheet">
+<link href="assets/js/colorPicker/bootstrap-colorpicker.css" rel="stylesheet">
+<link href="assets/js/switch/bootstrap-switch.css" rel="stylesheet">
+<link href="assets/js/validate/validate.css" rel="stylesheet">
+<link href="assets/js/idealform/css/jquery.idealforms.css" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/js/upload/demos/css/uploader.css">
+<link rel="stylesheet" href="assets/js/upload/demos/css/demo.css">
+<link rel="stylesheet" href="assets/js/dropZone/downloads/css/dropzone.css">
+<link rel="stylesheet" href="assets/css/itattoo/haolou-main.css">
+<!-- BREADCRUMB -->
+<ul id="breadcrumb">
+    <li><span class="entypo-home"></span></li>
+    <li><i class="fa fa-lg fa-angle-right"></i></li>
+    <li><a href="#">房源</a></li>
+    <li><i class="fa fa-lg fa-angle-right"></i></li>
+    <li><a href="#">房源编辑</a></li>
+    <li class="pull-right">
+        <div class="input-group input-widget">
+            <input style="border-radius:15px" type="text" placeholder="Search..." class="form-control">
+        </div>
+    </li>
+</ul>
+<!-- END OF BREADCRUMB -->
+<div class="content-wrap">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="nest" id="FootableClose">
+                <div class="title-alt">
+                    <h6>房源编辑</h6>
+
+                    <div class="titleClose">
+                        <a class="gone" href="#FootableClose">
+                            <span class="entypo-cancel"></span>
+                        </a>
+                    </div>
+                    <div class="titleToggle">
+                        <a class="nav-toggle-alt" href="#Footable">
+                            <span class="entypo-up-open"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="body-nest" id="Footable">
+                    <div class="panel-body">
+                        <form method="get" class="form-horizontal bucket-form">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">类型</label>
+
+                                <div class="col-sm-8">
+                                    <div class="skin skin-flat">
+                                        <ul class="list">
+                                            <li>
+                                                <input tabindex="19" type="radio" id="line-radio-1"
+                                                       name="line-radio" checked="">
+                                                <label for="line-radio-1">出租</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="20" type="radio" id="line-radio-2"
+                                                       name="line-radio">
+                                                <label for="line-radio-2">转租</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="20" type="radio" id="line-radio-3"
+                                                       name="line-radio">
+                                                <label for="line-radio-3">新盘</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="20" type="radio" id="line-radio-4"
+                                                       name="line-radio">
+                                                <label for="line-radio-4">二手</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">所属写字楼</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">栋/单元/楼层</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control"
+                                           style="display:inline-block;width:calc(30% - 15px)">
+                                    <span style="margin: 0 5px">栋</span>
+                                    <input type="text" class="form-control"
+                                           style="display:inline-block;width:calc(28% - 15px)">
+                                    <span style="margin: 0 5px">单元</span>
+                                    <input type="text" class="form-control"
+                                           style="display:inline-block;width:calc(30% - 15px)">
+                                    <span style="margin-left:5px">楼层</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">房间号</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">面积</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-sm-2 control-label" style="text-align: left"><span>平米</span></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">租金</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-sm-2 control-label" style="text-align: left"><span>元/平米</span></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class=" col-sm-2 control-label">装修</label>
+
+                                <div class="col-sm-8">
+                                    <div class="skin skin-flat">
+                                        <ul class="list">
+                                            <li>
+                                                <input tabindex="19" type="radio" id="line-radio-b1"
+                                                       name="line-radio-b">
+                                                <label for="line-radio-b1">清水</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="20" type="radio" id="line-radio-b2"
+                                                       name="line-radio-b">
+                                                <label for="line-radio-b2">普装</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="21" type="radio" id="line-radio-b3"
+                                                       name="line-radio-b" checked="">
+                                                <label for="line-radio-b3">精装</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="22" type="radio" id="line-radio-b4"
+                                                       name="line-radio-b">
+                                                <label for="line-radio-b4">装修带家具</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">业主</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">手机</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class=" col-sm-2 control-label">付款</label>
+
+                                <div class="col-sm-8">
+                                    <div class="skin skin-flat">
+                                        <ul class="list">
+                                            <li>
+                                                <input tabindex="19" type="radio" id="line-radio-bb1"
+                                                       name="line-radio-bb" checked="">
+                                                <label for="line-radio-bb1">月付</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="20" type="radio" id="line-radio-bb2"
+                                                       name="line-radio-bb">
+                                                <label for="line-radio-bb2">季付</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="21" type="radio" id="line-radio-bb3"
+                                                       name="line-radio-bb">
+                                                <label for="line-radio-bb3">半年付</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="22" type="radio" id="line-radio-bb4"
+                                                       name="line-radio-bb">
+                                                <label for="line-radio-bb4">年付</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class=" col-sm-2 control-label">佣金</label>
+
+                                <div class="col-sm-8">
+                                    <div class="skin skin-flat">
+                                        <ul class="list">
+                                            <li>
+                                                <input tabindex="19" type="radio" id="line-radio-ab1"
+                                                       name="line-radio-ab" checked="">
+                                                <label for="line-radio-ab1">一个月</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="20" type="radio" id="line-radio-ab2"
+                                                       name="line-radio-ab">
+                                                <label for="line-radio-ab2">半个月</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="21" type="radio" id="line-radio-ab3"
+                                                       name="line-radio-ab">
+                                                <label for="line-radio-ab3">免佣</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="22" type="radio" id="line-radio-ab4"
+                                                       name="line-radio-ab">
+                                                <label for="line-radio-ab4">面议</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class=" col-sm-2 control-label">钥匙</label>
+
+                                <div class="col-lg-8">
+                                    <div class="skin skin-flat">
+                                        <ul class="list">
+                                            <li>
+                                                <input tabindex="19" type="checkbox" id="flat-checkbox-1"
+                                                       name="flat-checkbox">
+                                                <label for="flat-checkbox-1">物业</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="20" type="checkbox" id="flat-checkbox-2"
+                                                       name="flat-checkbox">
+                                                <label for="flat-checkbox-2">中介</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="21" type="checkbox" id="flat-checkbox-3"
+                                                       name="flat-checkbox">
+                                                <label for="flat-checkbox-3">业主</label>
+                                            </li>
+                                            <li>
+                                                <input tabindex="22" type="checkbox" id="flat-checkbox-4"
+                                                       name="flat-checkbox" checked="">
+                                                <label for="flat-checkbox-4">自持</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">标题</label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">房勘</label>
+
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" style="height: 100px !important"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">办公司简介</label>
+
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" style="height: 100px !important"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">房源照片</label>
+
+                                <div class="col-sm-8">
+                                    <ul class="img-update row">
+                                        <li class="col-sm-3">
+                                            <img class="img-responsive-media"
+                                                 src="http://api.randomuser.me/portraits/thumb/men/10.jpg" alt="">
+
+                                            <div class="progress update-progress hidden" style="width: 80%;left: 10%">
+                                                <div class="progress-bar progress-bar-success"
+                                                     role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                                     aria-valuemax="100" style="width: 40%">
+                                                    40%
+                                                </div>
+                                            </div>
+                                            <div class="update-progress">
+                                                <ul class="img-update row">
+                                                    <li class="col-sm-9" style="padding: 0;padding-left: 10px">
+                                                        <a href="#"><span class="w">设为封面</span></a></li>
+                                                    <li class="col-sm-3" style="padding: 0">
+                                                        <a href="#"><span
+                                                                class="icon icon-cross"></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <img class="img-responsive-media"
+                                                 src="http://api.randomuser.me/portraits/thumb/men/10.jpg" alt="">
+
+                                            <div class="progress update-progress hide" style="width: 80%;left: 10%">
+                                                <div class="progress-bar progress-bar-success"
+                                                     role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                                     aria-valuemax="100" style="width: 40%">
+                                                    40%
+                                                </div>
+                                            </div>
+                                            <div class="update-progress">
+                                                <ul class="img-update row">
+                                                    <li class="col-sm-9" style="padding: 0;padding-left: 10px">
+                                                        <a href="#"><span class="w">取消封面</span></a></li>
+                                                    <li class="col-sm-3" style="padding: 0">
+                                                        <a href="#"><span
+                                                                class="icon icon-cross"
+                                                                style="color: orange"></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <img class="img-responsive-media"
+                                                 src="http://api.randomuser.me/portraits/thumb/men/10.jpg" alt="">
+
+                                            <div class="progress update-progress" style="width: 80%;left: 10%">
+                                                <div class="progress-bar progress-bar-success"
+                                                     role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                                     aria-valuemax="100" style="width: 40%">
+                                                    40%
+                                                </div>
+                                            </div>
+                                            <div class="update-progress hide">
+                                                <ul class="img-update row">
+                                                    <li class="col-sm-9" style="padding: 0;padding-left: 10px">
+                                                        <a href="#"><span class="w">设为封面</span></a></li>
+                                                    <li class="col-sm-3" style="padding: 0">
+                                                        <a href="#"><span
+                                                                class="icon icon-cross"></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <div class="uploader">
+                                                <div class="browser">
+                                                    <label>
+                                                        <span class="icon icon-plus"></span>
+                                                        <input type="file" name="files[]" multiple="multiple"
+                                                               title="Click to add Files">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-wrap hide">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="nest" id="FootableClose1">
+                <div class="title-alt">
+                    <h6>房源照片</h6>
+
+                    <div class="titleClose">
+                        <a class="gone" href="#FootableClose1">
+                            <span class="entypo-cancel"></span>
+                        </a>
+                    </div>
+                    <div class="titleToggle">
+                        <a class="nav-toggle-alt" href="#Footable1">
+                            <span class="entypo-up-open"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="body-nest" id="Footable1">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <div class="uploader">
+                                <div class="browser">
+                                    <label>
+                                        <span>上传</span>
+                                        <input type="file" name="files[]" multiple="multiple"
+                                               title="Click to add Files">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <button class="btn btn-info" style="border-radius: 2px;width: 100%;height: 29px;"
+                                    type="button">保存
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" style="margin-top: 20px">
+                            <ul class="img-update p row">
+                                <li class="col-sm-3">
+                                    <img class="img-responsive-media"
+                                         src="http://api.randomuser.me/portraits/thumb/men/10.jpg" alt="">
+
+                                    <div class="progress update-progress hidden">
+                                        <div class="progress-bar progress-bar-success p"
+                                             role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                             aria-valuemax="100" style="width: 40%">
+                                            40%
+                                        </div>
+                                    </div>
+                                    <div class="update-progress p">
+                                        <ul class="img-update row">
+                                            <li class="col-sm-3" style="padding: 10px"><a href="#"><span
+                                                    class="icon icon-arrow-left"></span></a></li>
+                                            <li class="col-sm-3"><a href="#"><span
+                                                    class="icon icon-download"></span></a></li>
+                                            <li class="col-sm-3"><a href="#"><span
+                                                    class="icon icon-trash"></span></a></li>
+                                            <li class="col-sm-3"><a href="#"><span
+                                                    class="icon icon-arrow-right"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="col-sm-3">
+                                    <img class="img-responsive-media"
+                                         src="http://api.randomuser.me/portraits/thumb/men/10.jpg" alt="">
+
+                                    <div class="progress update-progress p">
+                                        <div class="progress-bar progress-bar-success"
+                                             role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                             aria-valuemax="100" style="width: 40%">
+                                            40%
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-3">
+                                    <img class="img-responsive-media"
+                                         src="http://api.randomuser.me/portraits/thumb/men/10.jpg" alt="">
+
+                                    <div class="progress update-progress p">
+                                        <div class="progress-bar progress-bar-success"
+                                             role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                             aria-valuemax="100" style="width: 40%">
+                                            40%
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-wrap">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="nest">
+                <div class="title-alt" style="padding:10px;">
+                    <div class="row">
+                        <div class="col-sm-2 col-lg-push-4">
+                            <button class="btn btn-info" style="border-radius: 2px;width: 100%;height: 29px;"
+                                    type="button">保存
+                            </button>
+                        </div>
+                        <div class="col-sm-2 col-lg-push-4">
+                            <button class="btn"
+                                    style="border-radius: 2px;width: 100%;height: 29px;background-color: #585858"
+                                    type="button">取消
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/js/iCheck/jquery.icheck.js"></script>
+<script type="text/javascript" src="assets/js/switch/bootstrap-switch.js"></script>
+<!--  PLUGIN -->
+<script>
+    $(document).ready(function () {
+        //CHECKBOX PRETTYFY
+        $('.skin-flat input').iCheck({
+            checkboxClass: 'icheckbox_flat-red',
+            radioClass: 'iradio_flat-red'
+        });
+        $('.skin-line input').each(function () {
+            var self = $(this),
+                    label = self.next(),
+                    label_text = label.text();
+            label.remove();
+            self.iCheck({
+                checkboxClass: 'icheckbox_line-blue',
+                radioClass: 'iradio_line-blue',
+                insert: '<div class="icheck_line-icon"></div>' + label_text
+            });
+        });
+        //Switch Button
+        $('.make-switch').bootstrapSwitch('setSizeClass', 'switch-small');
+    });
+</script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="assets/js/upload/demos/js/demo.min.js"></script>
+<script type="text/javascript" src="assets/js/upload/src/dmuploader.min.js"></script>
+
+<script src="assets/js/dropZone/lib/dropzone.js"></script>
+
+<script type="text/javascript">
+    $('#drag-and-drop-zone').dmUploader({
+        url: '/assets/js/upload/demos/upload.php',
+        dataType: 'json',
+        allowedTypes: 'image/*',
+        /*extFilter: 'jpg;png;gif',*/
+        onInit: function () {
+            $.danidemo.addLog('#demo-debug', 'default', 'Plugin initialized correctly');
+        },
+        onBeforeUpload: function (id) {
+            $.danidemo.addLog('#demo-debug', 'default', 'Starting the upload of #' + id);
+            $.danidemo.updateFileStatus(id, 'default', 'Uploading...');
+        },
+        onNewFile: function (id, file) {
+            $.danidemo.addFile('#demo-files', id, file);
+        },
+        onComplete: function () {
+            $.danidemo.addLog('#demo-debug', 'default', 'All pending tranfers completed');
+        },
+        onUploadProgress: function (id, percent) {
+            var percentStr = percent + '%';
+            $.danidemo.updateFileProgress(id, percentStr);
+        },
+        onUploadSuccess: function (id, data) {
+            $.danidemo.addLog('#demo-debug', 'success', 'Upload of file #' + id + ' completed');
+            $.danidemo.addLog('#demo-debug', 'info', 'Server Response for file #' + id + ': ' + JSON.stringify(data));
+            $.danidemo.updateFileStatus(id, 'success', 'Upload Complete');
+            $.danidemo.updateFileProgress(id, '100%');
+        },
+        onUploadError: function (id, message) {
+            $.danidemo.updateFileStatus(id, 'error', message);
+            $.danidemo.addLog('#demo-debug', 'error', 'Failed to Upload file #' + id + ': ' + message);
+        },
+        onFileTypeError: function (file) {
+            $.danidemo.addLog('#demo-debug', 'error', 'File /'
+            ' + file.name + ' / ' cannot be added: must be an image'
+            )
+            ;
+        },
+        onFileSizeError: function (file) {
+            $.danidemo.addLog('#demo-debug', 'error', 'File /'
+            ' + file.name + ' / ' cannot be added: size excess limit'
+            )
+            ;
+        },
+        /*onFileExtError: function(file){
+         $.danidemo.addLog('#demo-debug', 'error', 'File /'' + file.name + '/' has a Not Allowed Extension');
+         },*/
+        onFallbackMode: function (message) {
+            $.danidemo.addLog('#demo-debug', 'info', 'Browser not supported(do something else here!): ' + message);
+        }
+    });
+</script>
+
+<script>
+    Dropzone.options.myDropzone = {
+        // Prevents Dropzone from uploading dropped files immediately
+        autoProcessQueue: false,
+        init: function () {
+            var submitButton = document.querySelector("#submit-all")
+            myDropzone = this; // closure
+            submitButton.addEventListener("click", function () {
+                myDropzone.processQueue(); // Tell Dropzone to process all queued files.
+            });
+            // You might want to show the submit button only when
+            // files are dropped here:
+            this.on("addedfile", function () {
+                // Show submit button here and/or inform user to click it.
+            });
+        }
+    };
+</script>

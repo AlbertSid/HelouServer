@@ -1,0 +1,54 @@
+
+.demo-container {
+    margin: 10px;
+}
+
+code {
+    background: #ddd;
+    padding: 2px 5px;
+}
+
+.status-metro {
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 11px;
+}
+
+.status-metro.status-active {
+    background: #86C440;
+}
+
+.status-metro.status-disabled {
+    background: #999999;
+}
+
+.status-metro.status-suspended {
+    background: #DF2135;
+}
+
+.status-metro.status-b {
+    background: #1786cc;
+}
+.status-metro.status-s {
+    background: #00bef2;
+}
+.status-metro.status-money {
+    background: #e9d321;
+}
+
+.footable-last-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footable-last-column li {
+    display: inline-block;
+    width: 30%;
+}
+
+.foo-setup li {
+    margin-bottom: 30px;
+}
